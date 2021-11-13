@@ -1,0 +1,84 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+            "path" : "pages/hot/hot",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "热搜",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/hot-vedio/hot-vedio",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "styles/global/global",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"selectedColor":"#F94D2A",
+		"list":[
+			{
+				"pagePath":"pages/hot/hot",
+				"iconPath":"static/tab-icons/hot.png",
+				"selectedIconPath":"static/tab-icons/hot-active.png",
+				"text":"热搜"
+			},
+			{
+				"pagePath":"pages/hot-vedio/hot-vedio",
+				"iconPath":"static/tab-icons/hot-video.png",
+				"selectedIconPath":"static/tab-icons/hot-video-active.png",
+				"text":"热播"
+			},
+			{
+				"pagePath":"pages/my/my",
+				"iconPath":"static/tab-icons/my-active.png",
+				"selectedIconPath":"static/tab-icons/my.png",
+				"text":"我的"
+			}
+		]
+	},
+	"subPackges":[
+		{
+			"root": "subpkg",
+			"name": "sub-1",
+			"pages": [
+			  {
+			    "path": "pages/search-blog/search-blog",
+			    "style": {
+			      "navigationBarTitleText": "慕课搜索",
+			      "enablePullDownRefresh": false
+			    }
+		}
+	]
+}
+]
+}

@@ -1,0 +1,28 @@
+/*定义公共样式的地方
+	最多展示两行的样式
+	放入标题和简介
+*/
+.line-clamp-2{
+	overflow:hidden;
+	text-overflow: ellipsis;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+}
+/*卡片视图样式定义*/
+	
+.card{
+	border: 1px solid #f9f9f9;
+	border-radius: 5px;
+	margin: 12px;
+	padding: 12px;
+	box-shadow: 2px 2px 5px 1px rgba(143, 143, 143, 0.1);
+}
+
+/* 单行不换行*/
+.nowrap {
+  white-space: nowrap;
+  /*后面由省略号。。。*/
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
